@@ -1,0 +1,162 @@
+header {
+    background: #181a1b;
+    background-size: cover;
+    min-height: 90vh;
+    position: relative;
+    #particles-js {
+        height: 80vh;
+        position: relative;
+    }
+    #nav {
+        width: 100%;
+    }
+    .container {
+        max-width: 1200px;
+        padding: 1.5rem 1.5rem;
+        margin: auto;
+        overflow: hidden;
+        &__nav {
+            display: flex;
+            position: relative;
+            justify-content: center;
+        }
+        &__logo {
+            height: 4rem;
+            cursor: pointer;
+        }
+        &__title {
+            display: flex;
+            text-align: center;
+            max-width: 178px;
+            padding-top: 8px;
+            padding-left: 6px;
+            &--style {
+                color: white;
+                font-size: 1.2rem;
+            }
+        }
+        &__mobile-menu {
+            padding-top: 0;
+        }
+    }
+    .mobile-menu {
+        justify-content: center;
+        display: flex;
+        list-style: none;
+        &__links {
+            margin: 0 0.5rem;
+            color: white;
+            font-size: 18px;
+        }
+    }
+    .hero {
+        z-index: 5;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @media screen and (max-width: 999px) {
+            top: 65%;
+        }
+        @media screen and (max-width: 768px) {
+            width: 90%;
+        }
+        &__title {
+            letter-spacing: 2px;
+            white-space: nowrap;
+            text-align: center;
+            font-size: clamp(2rem, 5vw, 4rem);
+            color: white;
+            &--name {
+                background: rgb(28,205,222);
+                background: linear-gradient(180deg, rgba(28,205,222,1) 0%, rgba(56,131,179,1) 50%, rgba(88,44,127,1) 74%);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: inline-block;
+                @media screen and (max-width: 500px) {
+                    max-width: 100%;
+                }
+            }
+        }
+        &__paragraph {
+            color: #dcdcdc;
+            line-height: 1.6;
+            font-size: clamp(1.25rem, 2vw, 1.5rem);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0.5rem;
+        }
+        &__btn-container {
+            white-space: nowrap;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        &__btn {
+            text-decoration: none;
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            transition: all 0.3s;
+            border-radius: 3px;  
+            &--blu {
+              color: white;
+              background-color: transparent;
+              border: 2px solid #3d73a9;
+            }
+            &--purp {
+                color: white;
+                background-color: transparent;
+                border: 2px solid #5b277c;
+            }
+        }
+    } 
+    .scroll-btn-container {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        bottom: -10px;
+        @media screen and (max-width: 359px) {
+            display: none;
+        }
+        &__header {
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+        }
+        &__arrow {
+            display: block;
+            height: 20px;
+            width: 20px;
+            border-bottom: 2px solid #3b82f6;
+            border-right: 2px solid #3b82f6;
+            transform: rotate(45deg);
+            margin: -20px 0;
+            animation: animate 2s infinite;
+            &:nth-child(2) {
+                animation-delay: -0.2s;
+            }
+            &:nth-child(3) {
+                animation-delay: -0.4s;
+            }
+        }
+    }
+}
+
+@keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+
+        
