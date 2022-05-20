@@ -6,106 +6,312 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="/img/logo.svg">
     <title>Alex Salazar | Software Engineer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"/>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.0.0/kute.min.js"></script>
 </head>
 <body>
     <header>
-        <div id="particles-js">
-            <nav id="nav">
-                <div class="container container__nav">
-                    <a href="updated.html"><img src="img/PNG Logo.png" class="container__logo" alt="Logo"></a>
-                    <span class="container__title container__title--style">Alex Salazar Software Developer</span>
-                </div>
-                <div class="container container__mobile-menu hide-for-desktop">
-                    <ul class="mobile-menu">
-                        <a><li class="mobile-menu__links">Projects</li></a>
-                        <a><li class="mobile-menu__links">Skills</li></a>
-                        <a><li class="mobile-menu__links">Resume</li></a>
-                        <a><li class="mobile-menu__links">Contact</li></a>
+        <nav id="nav" data-aos="fade-in">
+            <div class="container container__nav">
+                <a href="updated.html"><img src="img/logo.png" class="container__logo" alt="Logo"></a>
+                <span class="container__title container__title--style">Alex Salazar Software Developer</span>
+                <div class="container container__desktop-menu hide-for-mobile">
+                    <ul class="desktop-menu">
+                        <li class="desktop-menu__links"><a href="#projects"><i class="fas fa-code"></i>Projects</a></li>
+                        <li class="desktop-menu__links"><a href="#skills"><i class="fas fa-tools"></i>Skills</a></li>
+                        <li class="desktop-menu__links"><a href="https://docs.google.com/document/d/1uEJwxjrk8-8bdbOdoIIpLEEPESLk3Jxi4dyLKbq8E1w/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fas fa-file"></i>Resume</a></li>
+                        <li class="desktop-menu__links"><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
                     </ul>
                 </div>
-            </nav>
-            <div class="hero">
-                <h1 class="hero__title">Hi, I'm 
+            </div>
+            <div class="container container__mobile-menu hide-for-desktop">
+                <ul class="mobile-menu">
+                    <li class="mobile-menu__links"><a href="#projects">Projects</a></li>
+                    <li class="mobile-menu__links"><a href="#skills">Skills</a></li>
+                    <li class="mobile-menu__links"><a href="https://docs.google.com/document/d/1uEJwxjrk8-8bdbOdoIIpLEEPESLk3Jxi4dyLKbq8E1w/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                    <li class="mobile-menu__links"><a href="#contact">Contact</a></li>
+                </ul>
+           </div>
+        </nav>
+        <div class="wavesTop" data-aos="fade-in">
+            <svg width="2560" height="140" viewBox="0 0 2560 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_b_141_51)">
+                <path id="point1" d="M0 113.258L213.333 124.27L426.667 122.697L640 140L853.333 127.416L1066.67 108.539H1280L1493.33 122.697H1706.67L1920 127.416L2133.33 135.281L2346.67 113.258L2560 108.539V0L2346.67 0L2133.33 0L1920 0L1706.67 0L1493.33 0L1280 0L1066.67 0L853.333 0L640 0L426.667 0L213.333 0L0 0L0 113.258Z" fill="#C530FA" fill-opacity="0.75"/>
+                <path id="point3" d="M0 100.261L213.333 122.541L426.667 100.261L640 131.825L853.333 100.261L1066.67 111.401L1280 84.7376L1493.33 111.401L1706.67 102.118L1920 122.541L2133.33 102.118L2346.67 100.261L2560 111.401V0L2346.67 0L2133.33 0L1920 0L1706.67 0L1493.33 0L1280 0L1066.67 0L853.333 0L640 0L426.667 0L213.333 0L0 0L0 100.261Z" fill="#7A2D95"/>
+                <path id="point5" d="M0 82.1395L213.333 103.652L426.667 97.7851L640 113.431L853.333 82.1395L1066.67 97.7851L1280 82.1395L1493.33 95.8294L1706.67 103.652L1920 95.8294L2133.33 97.7851L2346.67 82.1395L2560 95.8294V0L2346.67 0L2133.33 0L1920 0L1706.67 0L1493.33 0L1280 0L1066.67 0L853.333 0L640 0L426.667 0L213.333 0L0 0L0 82.1395Z" fill="#247BAC"/>
+                <path id="point7" d="M0 62.5L201.373 98.1022L426.667 82.5385L640 62.5L734.5 82.5385L853.333 53.65L1066.67 51.5865H1280L1493.33 82.5385L1706.67 61.9039L1920 82.5385L2133.33 51.5865L2346.67 61.9039L2560 82.5385V0L2346.67 0L2133.33 0L1920 0L1706.67 0L1493.33 0L1280 0L1066.67 0L853.333 0L640 0L426.667 0L213.333 0L0 0L0 62.5Z" fill="#2E6E93"/>
+                <path id="point9" d="M0 54.0928H101.5L202.5 38.5L302 79.5L426.667 54.0928L537 17.5L640 41.1105L766.5 28.5L891.16 54.0928L1066.67 28.1282L1233.83 32.4557L1493.33 54.0928L1607 28.1282L1706.67 54.0928L1800 32.4557L1892.46 41.1105L2014.5 54.0928L2133.33 32.4557L2346.67 38.9468L2470 54.0928L2560 36.7831V0L2346.67 0L2133.33 0L1920 0L1706.67 0L1493.33 0L1280 0L1066.67 0L853.333 0L640 0L426.667 0L213.333 0L0 0L0 54.0928Z" fill="#87898A"/>
+                </g>
+                <defs>
+                <filter id="filter0_b_141_51" x="-4" y="-4" width="2568" height="148" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
+                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_141_51"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_141_51" result="shape"/>
+                </filter>
+                </defs>
+
+                <g filter="url(#filter0_b_141_65)" style="visibility: hidden">
+                <path id="point2" d="M0 106H225.5L327 128.5L431.5 121.5L537.5 128.5L640 121.5L853.333 140L1077.5 117.5L1174.75 132L1280 121.5L1505 108L1629 130.5L1941 116.5L2110.5 147.5L2178 124.5L2262 140L2391 111L2560 120.5V0L2346.67 0L2133.33 0L1920 0L1706.67 0L1493.33 0L1280 0L1066.67 0L853.333 0L640 0L426.667 0L213.333 0L0 0L0 106Z" fill="#C530FA" fill-opacity="0.75"/>
+                <path id="point4" d="M0 100.261L231.5 90.5L433 113.5L653 108L889 112L945.5 85.5L1076 100H1291L1404.5 107.5L1510.5 91H1618.5L1719.5 114L1941 100L2142.5 120L2267 105L2339 114.5L2463 91.5H2560V0L2346.67 0L2133.33 0L1920 0L1706.67 0L1493.33 0L1280 0L1066.67 0L853.333 0L640 0L426.667 0L213.333 0L0 0L0 100.261Z" fill="#7A2D95"/>
+                <path id="point6" d="M0 82.1395L213.333 72L434 90.5L634.5 99L807.5 95.5L888 60.5L1076 91.5L1280 82.1395L1511 74.5L1711 91.5L1951.5 85.5L2133.33 97.7851L2346.67 82.1395H2560V0L2346.67 0L2133.33 0L1920 0L1706.67 0L1493.33 0L1280 0L1066.67 0L853.333 0L640 0L426.667 0L213.333 0L0 0L0 82.1395Z" fill="#247BAC"/>
+                <path id="point8" d="M0 74L203 47L321 81.5L568.5 71L718 92.5L886 34.5L1069 83.5L1300 75L1499 51.5865L1717.5 82.5385L1924 49.5L2135.5 91.5L2359 75L2560 61.9039V0L2346.67 0L2133.33 0L1920 0L1706.67 0L1493.33 0L1280 0L1066.67 0L853.333 0L640 0L426.667 0L213.333 0L0 0L0 74Z" fill="#2E6E93"/>
+                <path id="point10" d="M0 54.0928L183.5 32.4557L426.667 28.1282L640 54.0928L885.5 19.5H1066.67L1237.5 54.0928L1493.33 32.4557L1706.67 28.1282H1900L2133.33 54.0928L2346.67 19.5L2560 36.7831V0L2346.67 0L2133.33 0L1920 0L1706.67 0L1493.33 0L1280 0L1066.67 0L853.333 0L640 0L426.667 0L213.333 0L0 0L0 54.0928Z" fill="#87898A"/>
+                </g>
+                <defs>
+                <filter id="filter0_b_141_65" x="-4" y="-4" width="2568" height="155.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
+                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_141_65"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_141_65" result="shape"/>
+                </filter>
+                </defs>
+            </svg>
+        </div>
+        <div class="hero">
+            <div data-aos="fade-up">
+                <h1 class="hero__title">Hi, I'm
                     <span class="hero__title--name">Alex</span>
                 </h1>
-                <p class="hero__paragraph">I'm a software developer specalizing in the MERN stack. These days I work for the agency 100Devs building fullstack applications for clients while collaborating with small businesses for freelance web development</p>
+                <p class="hero__paragraph">I am a software developer specalizing in the JavaScript ecosystem. These days I work for the agency 100Devs building fullstack applications for clients while collaborating with small businesses for freelance web development</p>
                 <div class="hero__btn-container">
-                    <a href="#" class="hero__btn hero__btn--blu"> Projects</a>
-                    <a href="#" class="hero__btn hero__btn--purp"> Github</a>
+                    <a href="#" class="hero__btn hero__btn--blu"><i class="fas fa-code"></i>Projects</a>
+                    <a href="#" class="hero__btn hero__btn--purp"><i class="fab fa-github"></i>Github</a>
                 </div>
             </div>
-            <div class="scroll-btn-container">
-                <a href="#projects" class="scroll-btn-container__header">
-                    <span class="scroll-btn-container__arrow"></span>
-                    <span class="scroll-btn-container__arrow"></span>
-                    <span class="scroll-btn-container__arrow"></span>
-                </a>
-            </div>
+        </div>
+        <section class="socials" data-aos="fade-in">
+            <ul>
+                <li class="bg-blue">
+                    <a class="text-white" href="https://www.linkedin.com/in/alex-salazar-dev/" target="_blank">
+                        <span>LinkedIn</span>
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </li>
+                <li class="bg-dark-grey">
+                    <a class="text-white" href="https://github.com/Asalz20" target="_blank">
+                        <span>GitHub</span>
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </li>
+                <li class="bg-white">
+                    <a class="text-dark-grey" href="mailto:a.salazar2022devs@gmail.com" target="_blank" >
+                        <span>Email</span>
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <div class="scroll-btn-container">
+            <a href="#projects" class="scroll-btn-container__header">
+                <span class="scroll-btn-container__arrow"></span>
+                <span class="scroll-btn-container__arrow"></span>
+                <span class="scroll-btn-container__arrow"></span>
+            </a>
+        </div>
+        <div class="wavesBottom">
+            <svg data-aos="fade-in" width="2560" height="140" viewBox="0 0 2560 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_b_128_23)">
+                <path id="pointA" d="M2560 26.7416L2346.67 15.7303L2133.33 17.3034L1920 -9.2446e-07L1706.67 12.5843L1493.33 31.4607L1280 31.4607L1066.67 17.3034L853.333 17.3034L640 12.5843L426.667 4.71911L213.333 26.7416L0 31.4607V140L213.333 140L426.667 140L640 140L853.333 140L1066.67 140H1280L1493.33 140L1706.67 140L1920 140L2133.33 140L2346.67 140L2560 140V26.7416Z" fill="#C530FA" fill-opacity="0.75"/>
+                <path id="pointC" d="M2560 39.7389L2346.67 17.4586L2133.33 39.7389L1920 8.17518L1706.67 39.7389L1493.33 28.5987L1280 55.2624L1066.67 28.5987L853.333 37.8823L640 17.4586L426.667 37.8822L213.333 39.7389L0 28.5987V140L213.333 140L426.667 140L640 140L853.333 140L1066.67 140H1280L1493.33 140L1706.67 140L1920 140L2133.33 140L2346.67 140L2560 140V39.7389Z" fill="#7A2D95"/>
+                <path id="pointE" d="M2560 57.8605L2346.67 36.3478L2133.33 42.2149L1920 26.5693L1706.67 57.8605L1493.33 42.2149L1280 57.8605L1066.67 44.1706L853.333 36.3478L640 44.1706L426.667 42.2149L213.333 57.8605L0 44.1706V140L213.333 140L426.667 140L640 140L853.333 140L1066.67 140H1280L1493.33 140L1706.67 140L1920 140L2133.33 140L2346.67 140L2560 140V57.8605Z" fill="#247BAC"/>
+                <path id="pointG" d="M2560 86.35L2358.63 41.8978L2133.33 57.4615L1920 77.5L1825.5 57.4615L1706.67 86.35L1493.33 88.4135L1280 88.4135L1066.67 57.4615L853.333 78.0961L640 57.4615L426.667 88.4135L213.333 78.0961L0 57.4615V140L213.333 140L426.667 140L640 140L853.333 140L1066.67 140H1280L1493.33 140L1706.67 140L1920 140L2133.33 140L2346.67 140L2560 140V86.35Z" fill="#2E6E93"/>
+                <path id="pointI" d="M2560 109.708L2458.5 85.9072L2357.5 101.5L2258 60.5L2133.33 85.9072L2023 122.5L1920 98.8895L1793.5 111.5L1668.84 85.9072L1493.33 111.872L1326.17 107.544L1066.67 85.9072L953 111.872L853.333 85.9072L760 107.544L667.536 98.8895L545.5 85.9072L426.667 107.544L213.333 101.053L90 85.9072L0 103.217V140L213.333 140L426.667 140L640 140L853.333 140L1066.67 140H1280L1493.33 140L1706.67 140L1920 140L2133.33 140L2346.67 140L2560 140V109.708Z" fill="#87898A"/>
+                </g>
+                <defs>
+                <filter id="filter0_b_128_23" x="-4" y="-4" width="2568" height="148" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
+                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_128_23"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_128_23" result="shape"/>
+                </filter>
+                </defs>
+
+                <g filter="url(#filter0_b_141_9)" style="visibility: hidden">
+                <path id="pointB" d="M2560 42L2334.5 42L2233 19.5L2128.5 26.5L2022.5 19.5L1920 26.5L1706.67 8L1482.5 30.5L1385.25 16L1280 26.5L1055 40L931 17.5L619 31.5L449.5 0.5L382 23.5L298 8L169 37L0 27.5V148L213.333 148L426.667 148L640 148L853.333 148L1066.67 148H1280L1493.33 148L1706.67 148L1920 148L2133.33 148L2346.67 148L2560 148V42Z" fill="#C530FA" fill-opacity="0.75"/>
+                <path id="pointD" d="M2560 47.7389L2328.5 57.5L2127 34.5L1907 40L1671 36L1614.5 62.5L1484 48L1269 48L1155.5 40.5L1049.5 57L941.5 57L840.5 34L619 48L417.5 28L293 43L221 33.5L97 56.5L0 56.5V148L213.333 148L426.667 148L640 148L853.333 148L1066.67 148H1280L1493.33 148L1706.67 148L1920 148L2133.33 148L2346.67 148L2560 148V47.7389Z" fill="#7A2D95"/>
+                <path id="pointF" d="M2560 65.8605L2346.67 76L2126 57.5L1925.5 49L1752.5 52.5L1672 87.5L1484 56.5L1280 65.8605L1049 73.5L849 56.5L608.5 62.5L426.667 50.2149L213.333 65.8605L0 65.8605V148L213.333 148L426.667 148L640 148L853.333 148L1066.67 148H1280L1493.33 148L1706.67 148L1920 148L2133.33 148L2346.67 148L2560 148V65.8605Z" fill="#247BAC"/>
+                <path id="pointH" d="M2560 74L2357 101L2239 66.5L1991.5 77L1842 55.5L1674 113.5L1491 64.5L1260 73L1061 96.4135L842.5 65.4615L636 98.5L424.5 56.5L201 73L0 86.0961V148L213.333 148L426.667 148L640 148L853.333 148L1066.67 148H1280L1493.33 148L1706.67 148L1920 148L2133.33 148L2346.67 148L2560 148V74Z" fill="#2E6E93"/>
+                <path id="pointJ" d="M2560 93.9072L2376.5 115.544L2133.33 119.872L1920 93.9072L1674.5 128.5L1493.33 128.5L1322.5 93.9072L1066.67 115.544L853.333 119.872L660 119.872L426.667 93.9072L213.333 128.5L0 111.217V148L213.333 148L426.667 148L640 148L853.333 148L1066.67 148H1280L1493.33 148L1706.67 148L1920 148L2133.33 148L2346.67 148L2560 148V93.9072Z" fill="#87898A"/>
+                </g>
+                <defs>
+                <filter id="filter0_b_141_9" x="-4" y="-3.5" width="2568" height="155.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
+                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_141_9"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_141_9" result="shape"/>
+                </filter>
+                </defs>
+            </svg>
         </div>
     </header>
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="projects__name">
-            My 
-            <span class="projects__name--gradient">Projects</span>
+            Projects & 
+            <span class="projects__name--color">Work</span>
             </h2>
-            <div class="projects__row">
+            <div data-aos="fade-up" class="projects__row">
                 <div class="projects__left">
-                    <img src="#" alt="Merril's Barbershop">
+                    <img src="#" alt="PectusPlus.com">
                 </div>
                 <div class="projects__right">
-                    <h3 class="projects__title">Merril&apos;s Barbershop</h3>
+                    <h3 class="projects__title">PectusPlus.com</h3>
                     <ul class="projects__tech-list">
-                        <p>
-                            <span class="projects__tech-list--gray">Made with:</span>
-                        </p>
-                        <li class="projects__tech-list--items">Hold</li>
-                        <li class="projects__tech-list--items">Hold</li>
-                        <li class="projects__tech-list--items">Hold</li>
+                        <li class="projects__tech-list--color">Made with:</li>
+                        <li class="projects__tech-list--items">
+                            <span class="iconify" data-icon="logos:javascript"></span>
+                        </li>
+                        <li class="projects__tech-list--items">
+                            <span class="iconify" data-icon="logos:react"></span>
+                        </li>
+                        <li data-icon="logos:nodejs" class="projects__tech-list--items">
+                            <span class="iconify" data-icon="logos:nodejs"></span>
+                        </li>
+                        <li data-icon="logos:nodejs" class="projects__tech-list--items">
+                            <span class="iconify" data-icon="simple-icons:express"></span>
+                        </li>
+                        <li data-icon="logos:nodejs" class="projects__tech-list--items">
+                            <span class="iconify" data-icon="vscode-icons:file-type-mongo"></span>
+                        </li>
                     </ul>
                     <p>
-                    Barbershop landing page template for small business. Built with HTML, CSS, and vanilla Javascript.
+                    Ecommerce website built for the Pectus Excavatum community.
                     </p>
                     <div class="btn-container">
                         <a href="#" class="btn-container__btn btn-container__btn--blu btn-container__btn--small">
-                            <i class="fab fa-youtube"></i>
+                            <i class="fas fa-external-link-alt"></i>
                              Live
                         </a>
                         <a href="#" class="btn-container__btn btn-container__btn--purp btn-container__btn--small">
-                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-github"></i>
                              Code
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="projects__row">
+            <div data-aos="fade-up" class="projects__row">
                 <div class="projects__left">
-                    <img src="#" alt="Calculator App">
+                    <img src="#" alt="PectusPlus Blog">
                 </div>
                 <div class="projects__right">
-                    <h3 class="projects__title">Calculator App</h3>
+                    <h3 class="projects__title">PectusPlus Blog</h3>
                     <ul class="projects__tech-list">
-                        <p>
-                            <span class="projects__tech-list--gray">Made with:</span>
-                        </p>
-                        <li class="projects__tech-list--items">Hold</li>
-                        <li class="projects__tech-list--items">Hold</li>
-                        <li class="projects__tech-list--items">Hold</li>
+                        <li class="projects__tech-list--color">Made with:</li>
+                        <li class="projects__tech-list--items">
+                            <span class="iconify" data-icon="logos:javascript"></span>
+                        </li>
+                        <li class="projects__tech-list--items">
+                            <span class="iconify" data-icon="logos:react"></span>
+                        </li>
+                        <li class="projects__tech-list--items">
+                            <span class="iconify" data-icon="logos:strapi-icon"></span>
+                        </li>
+                        <li class="projects__tech-list--items">
+                            <span class="iconify" data-icon="logos:graphql"></span>
+                        </li>
                     </ul>
                     <p>
-                    Calculator App built with HTML, CSS, and vanilla Javascript.
+                    Blog site for PectusPlus.com where posts go in depth on living with Pectus Excavatum, medical articles, stretching techniques, breathing techniques, and weightlifting routines
                     </p>
                     <div class="btn-container">
                         <a href="#" class="btn-container__btn btn-container__btn--blu btn-container__btn--small">
-                            <i class="fab fa-youtube"></i>
+                            <i class="fas fa-external-link-alt"></i>
                              Live
                         </a>
                         <a href="#" class="btn-container__btn btn-container__btn--purp btn-container__btn--small">
-                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-github"></i>
+                             Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" class="projects__row">
+                <div class="projects__left">
+                    <img src="#" alt="Church of Bergen Scripture Study App">
+                </div>
+                <div class="projects__right">
+                    <h3 class="projects__title">Church of Bergen Scripture Study App</h3>
+                    <ul class="projects__tech-list">
+                        <li class="projects__tech-list--color">Made with:</li>
+                        <li class="projects__tech-list--items">
+                            <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
+                        </li>
+                        <li class="projects__tech-list--items">
+                            <span class="iconify" data-icon="vscode-icons:file-type-scss2"></span>
+                        </li>
+                        <li class="projects__tech-list--items">
+                            <span class="iconify" data-icon="logos:javascript"></span>
+                        </li>
+                        <li class="projects__tech-list--items">
+                            <span class="iconify" data-icon="logos:nodejs"></span>
+                        </li>
+                        <li class="projects__tech-list--items">
+                            <span class="iconify" data-icon="simple-icons:express"></span>
+                        </li>
+                        <li class="projects__tech-list--items">
+                            <span class="iconify" data-icon="vscode-icons:file-type-mongo"></span>
+                        </li>
+                    </ul>
+                    <p>
+                    Bible Scripture app used by the Church of Bergen to recite, study, and interpret  scripture
+                    </p>
+                    <div class="btn-container">
+                        <a href="#" class="btn-container__btn btn-container__btn--blu btn-container__btn--small">
+                            <i class="fas fa-external-link-alt"></i>
+                             Live
+                        </a>
+                        <a href="#" class="btn-container__btn btn-container__btn--purp btn-container__btn--small">
+                            <i class="fab fa-github"></i>
+                             Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" class="projects__row">
+                <div class="projects__left">
+                    <img src="#" alt="ColombiArtista.com">
+                </div>
+                <div class="projects__right">
+                    <h3 class="projects__title">ColombiArista.com</h3>
+                    <ul class="projects__tech-list">
+                        <li class="projects__tech-list--color">Made with:</li>
+                        <li class="projects__tech-list--items">
+                            <span class="iconify" data-icon="logos:javascript"></span>
+                        </li>
+                        <li class="projects__tech-list--items">
+                            <span class="iconify" data-icon="logos:react"></span>
+                        </li>
+                        <li class="projects__tech-list--items">
+                            <span class="iconify" data-icon="logos:nodejs"></span>
+                        </li>
+                        <li class="projects__tech-list--items">
+                            <span class="iconify" data-icon="simple-icons:express"></span>
+                        </li>
+                    </ul>
+                    <p>
+                    Audio interviews between myself and Colombian NFT Artists posted on a podcast website 
+                    </p>
+                    <div class="btn-container">
+                        <a href="#" class="btn-container__btn btn-container__btn--blu btn-container__btn--small">
+                            <i class="fas fa-external-link-alt"></i>
+                             Live
+                        </a>
+                        <a href="#" class="btn-container__btn btn-container__btn--purp btn-container__btn--small">
+                            <i class="fab fa-github"></i>
                              Code
                         </a>
                     </div>
@@ -114,10 +320,10 @@
         </div>
     </section>
     <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="subject__name subject__name--white">
+        <div data-aos="fade-in" class="container">
+            <h2 class="skills__name skills__name--white">
                 My 
-                <span class="subject__name--gradient">Skills</span>
+                <span class="skills__name--color">Skills</span>
             </h2>
             <ul class="skills-icons">
                 <li class="skills-icons__items">
@@ -125,75 +331,131 @@
                     <span>HTML</span>
                 </li>
                 <li class="skills-icons__items">
-                    <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
-                    <span>HTML</span>
+                    <span class="iconify" data-icon="vscode-icons:file-type-css"></span>
+                    <span>CSS</span>
                 </li>
                 <li class="skills-icons__items">
-                    <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
-                    <span>HTML</span>
+                    <span class="iconify" data-icon="vscode-icons:file-type-scss2"></span>
+                    <span>SCSS</span>
                 <li class="skills-icons__items">
-                    <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
-                    <span>HTML</span>
+                    <span class="iconify" data-icon="logos:javascript"></span>
+                    <span>JavaScript</span>
                 </li>
                 <li class="skills-icons__items">
-                    <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
-                    <span>HTML</span>
+                    <span class="iconify" data-icon="logos:react"></span>
+                    <span>React</span>
                 </li>
                 <li class="skills-icons__items">
-                    <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
-                    <span>HTML</span>
+                    <span class="iconify" data-icon="fa-brands:node-js" style="color: green;"></span>
+                    <span>Node.js</span>
                 </li>
                 <li class="skills-icons__items">
-                    <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
-                    <span>HTML</span>
+                    <span class="iconify" data-icon="simple-icons:express" style="color: white;"></span>
+                    <span>Express</span>
                 </li>
                 <li class="skills-icons__items">
-                    <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
-                    <span>HTML</span>
+                    <span class="iconify" data-icon="vscode-icons:file-type-mongo"></span>
+                    <span>MongoDB</span>
                 </li>
                 <li class="skills-icons__items">
-                    <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
-                    <span>HTML</span>
+                    <span class="iconify" data-icon="logos:graphql"></span>
+                    <span>GraphQL</span>
                 </li>
                 <li class="skills-icons__items">
-                    <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
-                    <span>HTML</span>
+                    <span class="iconify" data-icon="logos:strapi-icon"></span>
+                    <span>Strapi</span>
                 </li>
                 <li class="skills-icons__items">
-                    <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
-                    <span>HTML</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--simple-icons" width="70" height="70" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="simple-icons:bigcommerce" data-inline="false" data-width="70" data-height="70"><path fill="currentColor" d="M12.645 13.663h3.027c.861 0 1.406-.474 1.406-1.235c0-.717-.545-1.234-1.406-1.234h-3.027c-.1 0-.187.086-.187.172v2.125c.015.1.086.172.187.172zm0 4.896h3.128c.961 0 1.535-.488 1.535-1.35c0-.746-.545-1.35-1.535-1.35h-3.128c-.1 0-.187.087-.187.173v2.34c.015.115.086.187.187.187zM23.72.053l-8.953 8.93h1.464c2.281 0 3.63 1.435 3.63 3c0 1.235-.832 2.14-1.722 2.541c-.143.058-.143.259.014.316c1.033.402 1.765 1.48 1.765 2.742c0 1.78-1.19 3.202-3.5 3.202h-6.342c-.1 0-.187-.086-.187-.172V13.85L.062 23.64c-.13.13-.043.359.143.359h23.631a.16.16 0 0 0 .158-.158V.182c.043-.158-.158-.244-.273-.13z"></path></svg>
+                    <span>BigCommerce</span>
+                </li>
+                <li class="skills-icons__items">
+                    <span class="iconify" data-icon="logos:git-icon"></span>
+                    <span>Git</span>
                 </li>
             </ul>
         </div>
     </section>
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="subject__name">
+            <h2 class="contact__name">
                 Contact
-                <span class="subject__name--gradient">Me</span>
+                <span class="contact__name--color">Me</span>
             </h2>
-            <div class="card-container">
+            <div data-aos="fade-in"  class="contact__card-container">
                 <div class="card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p>asalz9731@gmail.com</p>
-                </div>
-            </div>
-            <div class="card-container">
-                <div class="card">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fab fa-github fa-2x text-dark-grey"></i>
                     <h3>Github</h3>
-                    <a href="#">Asalz20</a>
+                    <a href="https://github.com/Asalz20" target="_blank">Asalz20</a>
                 </div>
-            </div>
-            <div class="card-container">
-                <div class="card">
-                    <i class="fas fa-envelope"></i>
+                <div data-aos="fade-in" data-aos-delay="100" class="card">
+                    <i class="fab fa-linkedin fa-2x text-blue"></i>
                     <h3>LinkedIn</h3>
-                    <a href="#">alex-salazar</a>
+                    <a href="https://www.linkedin.com/in/alex-salazar-dev/" target="_blank" >alex-salazar-dev</a>
+                </div>
+                <div data-aos="fade-in" data-aos-delay="200" class="card">
+                    <i class="fas fa-envelope text-dark-grey"></i>
+                    <h3>Email</h3>
+                    <p>a.salazar2022devs@gmail.com</p>
+                </div> 
+            </div>
+            <form id="contact-form" data-aos="zoom in" data-aos-delay="300" action="https://formspree.io/f/mqknwvpp" method="POST">
+                <h2 class="title">Send 
+                    <span class="title--color">Email</span>
+                </h2>
+                <div class="form__group">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="form__group">
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+                <div class="form__group">
+                    <textarea id="message" name="message" placeholder="Message" rows="7" required></textarea>
+                </div>
+                <button type="submit" class="btn-email">
+                    <span class="default">Send</span>
+                    <span class="success">
+                        <svg viewBox="0 0 16 16">
+                            <polyline points="3.75 9 7 12 13 5"></polyline>
+                        </svg>Sent
+                    </span>
+                    <svg class="trails" viewBox="0 0 33 64">
+                        <path d="M26,4 C28,13.3333333 29,22.6666667 29,32 C29,41.3333333 28,50.6666667 26,60"></path>
+                        <path d="M6,4 C8,13.3333333 9,22.6666667 9,32 C9,41.3333333 8,50.6666667 6,60"></path>
+                    </svg>
+                    <div class="plane">
+                        <div class="left"></div>
+                        <div class="right"></div>
+                    </div>
+                    <div id="status"></div>
+                </button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__flex">
+                <div class="logo">
+                    <img src="img/PNG Logo.png" class="container__logo" alt="Logo">
+                    <span>Alex Salazar Software Developer</span>
+                </div>
+                <div class="footer__icon-links">
+                    <a href="https://www.linkedin.com/in/alex-salazar-dev/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://github.com/Asalz20" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="mailto:a.salazar2022devs@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
+    <a id="backToTopBtn" class="btn-blue">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

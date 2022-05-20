@@ -1,12 +1,16 @@
 .projects {
-    background: white;
+    font-family: "Inter", sans-serif;
+    background: rgb(135,135,135);
+    background: linear-gradient(180deg, rgba(135,135,135,1) 0%, rgba(255,255,255,1) 100%);
     padding: 1rem 0;
     width: 100%;
     &__name {
+        font-size: 29px;
+        font-weight: 800;
         text-align: center;
-        &--gradient {
-            background: rgb(28,205,222);
-            background: linear-gradient(180deg, rgba(28,205,222,1) 0%, rgba(56,131,179,1) 50%, rgba(88,44,127,1) 74%);
+        margin-bottom: 5%;
+        &--color {
+            background: #8A00D5;
             background-clip: border-box;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -15,31 +19,57 @@
     }
     &__row {
         display: flex;
+        flex-direction: row;
         margin-bottom: 3rem;
-        flex-direction: column;
+        @media screen and (max-width: 860px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
     &__left {
+        width: 50%;
         margin-right: 2rem;
+        @media screen and (max-width: 860px) {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            border: 1px solid darkgray;
+            @media screen and (max-width: 860px) {
+                margin-bottom: 1rem;
+            }
+        }
     }
     &__right {
+        width: 50%;
+        @media screen and (max-width: 860px) {
+            width: 100%;
+        }
+        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
     &__title {
         font-size: 1.25rem;
+        font-weight: 600;
     }
     &__tech-list {
         display: flex;
         flex-wrap: wrap;
         list-style: none;
         margin-top: 1rem;
-        &--gray {
-            color: gray;
+        align-items: center;
+        svg {
+            width: 3rem;
+            height: 2rem;
+        }
+        &--color {
+            font-weight: 800;
+            margin-right: 1rem;
         }
         &--items {
-            margin-right: 20px;
-            font-size: 1.5rem;
+            margin-right: 0.5rem;
         }
     }
 }

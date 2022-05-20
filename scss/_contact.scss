@@ -1,4 +1,83 @@
 .contact {
     background-color: white;
-    padding: 3rem 0;
+    &__name {
+        margin-bottom: 2rem;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        font-size: 29px;
+        font-weight: 800;
+        &--color {
+            color: #8A00D5;
+        }
+    }
+    &__card-container {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+        flex-wrap: wrap;
+        .card {
+            font-family: "Inter", sans-serif;
+            background: #fff;
+            width: 260px;
+            margin: 20px;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 0.15rem 0.6rem rgb(43 52 56 / 15%);
+            border-radius: 3px;
+           & > * {
+                margin: 0.5rem;
+            }
+            a {
+                text-decoration: none;
+                color: #319cd9;
+            }
+            i {
+                font-size: 3.5rem;
+                margin-bottom: 1rem;
+                transition: 0.4s;
+                &:hover {
+                    transform: translateY(-20%);
+                }
+            }
+        }
+    }
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 3px;
+        box-shadow: 0 0.15rem 0.6rem rgb(43 52 56 / 15%);
+        padding: 2rem;
+        font-family: "Inter", sans-serif;
+        font-size: 29px;
+        .title {
+            text-align: center;
+            margin: 1.5rem 0;
+            font-weight: 900;
+            &--color {
+                color: #319cd9;
+            }
+        }
+        .form__group input {
+            margin: 0.75rem 0;
+            width: 100%;
+            border-radius: 3px;
+            border: 1px solid black;
+            padding: 0.75rem;
+            font-size: 1rem;
+        }
+        .form__group textarea {
+            width: 100%;
+            border-radius: 3px;
+            margin: 0.75rem 0;
+            border: 1px solid black;
+            padding: 0.75rem;
+            font-size: 1rem;
+            font-family: "Inter", sans-serif;
+            resize: vertical;
+        }
+
+    }
 }
